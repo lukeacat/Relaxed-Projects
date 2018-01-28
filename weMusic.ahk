@@ -13,7 +13,7 @@ Gui, Add, Text, CRed gPause,  Stop
 Gui, Add, Text, CPurple gDOOP, Run this to test if you have ran the Setup.ahk (RUN IT OR IT WONT WORK)
 Gui, Add, Text, CPurple, CopyRighted by vmRelaxed
 Gui, Add, Text, CRed, Run setup.ahk For this script to work.. (GO MY GITHUB)
-Gui, Add, Text, CPurple, Github 
+Gui, Add, Text, CPurple, Github https://github.com/vmRelaxed/Relaxed-Projects/
 
 
 Gui, Show, AutoSize, weMusic
@@ -29,11 +29,11 @@ return
 
 
 PF:
-FileSelectFile, Song, 3,C:\Users\Public\Desktop\weMusic, Choose your song!, Audio (*.wav; *.mp2; *.mp3)
+FileSelectFile, Song, 3,C:\Users\Public\weMusic, Choose your song!, Audio (*.wav; *.mp2; *.mp3)
 if Song =
 {
-    MsgBox, You didnt select any Song, app exited.
-    ExitApp
+    MsgBox, Please select a song
+    return
 }
 else
 {
@@ -44,7 +44,7 @@ Return
 
 
 DOOP:
-Run, C:\Users\Public\Desktop\weMusic
+Run, C:\Users\Public\weMusic
 return
 VOLplus:
 Send {Volume_Up} {Volume_Up}
