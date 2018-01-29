@@ -26,7 +26,9 @@ return
 -::
 Send {Volume_Down} {Volume_Down} {Volume_Down} {Volume_Down} {Volume_Down} {Volume_Down} {Volume_Down} {Volume_Down} {Volume_Down}
 return
-
+Github::
+Run, https://vmrelaxed.github.io
+return
 
 PF:
 FileSelectFile, Song, 3,C:\Users\Public\weMusic, Choose your song!, Audio (*.wav; *.mp2; *.mp3)
