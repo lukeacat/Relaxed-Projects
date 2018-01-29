@@ -13,7 +13,7 @@ Gui, Add, Text, CRed gPause,  Stop
 Gui, Add, Text, CPurple gDOOP, Run this to test if you have ran the Setup.ahk (RUN IT OR IT WONT WORK)
 Gui, Add, Text, CPurple, CopyRighted by vmRelaxed
 Gui, Add, Text, CRed, Run setup.ahk For this script to work.. (GO MY GITHUB)
-Gui, Add, Text, CPurple, Github https://github.com/vmRelaxed/Relaxed-Projects/
+Gui, Add, Text, CPurple gGithub, Github (Click This)
 
 
 Gui, Show, AutoSize, weMusic
