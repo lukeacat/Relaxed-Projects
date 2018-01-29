@@ -28,7 +28,7 @@ Exit:
     ExitApp
 
 Open:
-    FileSelectFile, File, 3,, Open a Music File, Music (*.mp4;*.m3u)
+    FileSelectFile, File, 3,, Open a Music File, Music (*.mp3;*.m3u;*.)
     If (!File)
         Return
     WMP.Url := File
