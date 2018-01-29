@@ -1,9 +1,11 @@
-Menu, File, Add, Open, Open
-Menu, Other, Add, Exit, Exit
-
-Menu, Main, Add, File, :File
-Menu, Main, Add, Other, :Other
-
+#NoTrayIcon
+#SingleInstance
+SetBatchLines, -1 ; Makes it fast as f**k..
+Menu, Choose, Add, Play, Play
+Menu, Main, Add, Choose, :Choose
+Menu, tray, Icon , 02o.ico, 1, 1
+gui, destroy
+gui, Show, AutoSize
 Gui, 1:New, +Resize
 Gui, Menu, Main
 Gui, Margin, 0, 0
@@ -27,9 +29,9 @@ GuiClose:
 Exit:
     ExitApp
 
-Open:
-    FileSelectFile, File, 3,, Open a Music File, Music (*.mp3;*.m3u;*.)
-    If (!File)
+Play:
+    FileSelectFile, Choose, 3,, Open a Music File, Music (*.mp3;*.m3u;*.)
+    If (!Choose)
         Return
-    WMP.Url := File
+    WMP.Url := Choose
 Return
